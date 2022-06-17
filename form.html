@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="#">
+                <h1 class="heading">Get In Touch</h1>
+                <input required type="text" name="FName" placeholder="First Name" class="name" id="fname">
+                <input required type="text" name="LName" placeholder="Last name" class="name" id="lname">
+                <input required type="email" name="Email" placeholder="Email" class="details" id="email">
+                <input required type="text" inputmode="numeric" name="Phone" pattern="[\d]{10}"  placeholder="Phone" class="details" id="phn">
+                <textarea required name="Address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+                <textarea name="More" id="more" cols="30" rows="10" placeholder="Type Your Message Here"></textarea>
+                <input type="Submit" id="submit">
+                <p class="greetings">Thanks for Submitting!</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

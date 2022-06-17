@@ -1,0 +1,344 @@
+
+.container{
+    background-color: rgb(174, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 70%;
+    height: 85%;
+    background-color: rgb(250, 250, 250);
+
+    
+}
+form{
+    display: grid;
+    width:70%;
+    height: 95%;
+    grid-template-areas: 
+    'head head'
+    'fname lname'
+    'email phn'
+    'address address'
+    'more more'
+    'submit submit'
+    ;
+ 
+}
+form input,textarea{
+    outline: none;
+    border: 1px solid transparent;
+    padding-left: 13px;
+    padding-top: 4px;
+    color: #0f5dc4;
+    font-size: large;
+}
+::placeholder{
+    color: #598aca;
+    font-weight: bold;
+    
+}
+#address::placeholder{
+    padding-top: 2%;
+    font-size: larger;
+    font-weight: bold;
+    color:#406ca7
+}
+#more::placeholder{
+    font-size: larger;
+    font-weight: bold;
+    color:#3a69a1
+}
+
+#fname{
+    grid-area: fname;
+}
+#lname{
+    grid-area: lname;
+}
+#email{
+    grid-area: email;
+}
+#phn{
+    grid-area: phn;
+}
+#address{
+    resize: none;
+    grid-area: address;
+    height: 8vh;
+    border-radius: 7px;
+    width:95%;
+    /* font-weight: bold; */
+    background-color: #b4c0f3;
+    color: #0f5dc4;
+    font-size: larger;
+}
+#more{
+    resize: none;
+    grid-area: more;
+    height:10vh;
+    border-radius: 7px;
+    width:95%;
+    background-color: #9ba1f3;
+    /* font-weight: bold; */
+    color: #2463b4;
+    font-size: larger;
+}
+#submit{
+    grid-area: submit;
+    margin: 0px auto;
+    width: 20%;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 20px;
+    padding: 1%;
+}
+.name{
+    width:90%;
+    height:8vh;
+    border-radius: 7px;
+    background-color: #e7eef8;
+}
+.details{
+    width:90%;
+    height:8vh;
+    border-radius: 7px;
+    background-color: #cad8ec;
+}
+
+.heading{
+    font-family:Arial, Helvetica, sans-serif;
+    grid-area: head;
+    font-weight:lighter;
+    font-size:6vh;
+   
+    color: rgb(47, 47, 241);
+}
+.greetings{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aqua;
+    font-size: 3vh;
+}
+@media (min-width:400px) and (max-width:900px){
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          width: 70%;
+          height: 90%;
+          background-color: WHITE;
+      
+          
+      }
+      form input,textarea{
+        outline: none;
+        border: 1px solid transparent;
+        padding-left: 13px;
+        padding-top: 4px;
+        color: #0f5dc4;
+        
+
+    }
+    form{
+        overflow: hidden;
+        display: grid;
+        width:70%;
+        height: 70vh;
+        grid-template-areas: 
+        'head '
+        'fname '
+        'lname'
+        'email '
+        'phn'
+        'address'
+        'more'
+        'submit'
+        ;
+       
+        
+    }
+    ::placeholder{
+        color: #598aca;
+        font-weight: bold;
+        
+    }
+    #address::placeholder{
+        padding-top: 1%;
+        font-size: medium;
+        font-weight: bold;
+        color:#406ca7
+    }
+    #more::placeholder{
+        font-size: medium;
+        font-weight: bold;
+        color:#3a69a1
+    }
+    #address{
+        resize: none;
+        grid-area: address;
+        height: 6vh;
+        border-radius: 7px;
+        width:90%;
+        font-size: medium;
+        background-color: #b4c0f3;
+        color: #0f5dc4;
+        font-size: 80%;
+    }
+    #more{
+        resize: none;
+        grid-area: more;
+        height:6vh;
+        border-radius: 7px;
+        width:90%;
+        background-color: #9ba1f3;
+        color: #2463b4;
+        font-size: 1em;
+    }
+    #submit{
+        grid-area: submit;
+        margin: 0px auto;
+        font-size: 80%;
+        width: 50%;
+        background-color: #1a73e8;
+        color: white;
+        border-radius: 20px;
+    }
+    .name{
+        width:90%;
+        height:6vh;
+        border-radius: 7px;
+        background-color: #e7eef8;
+        font-size: 70%;
+    }
+    .details{
+        width:90%;
+        height:6vh;
+        border-radius: 7px;
+        background-color: #cad8ec;
+        font-size: 70%;
+    }
+    
+    .heading{
+        margin:2px;
+        grid-area: head;
+        font-weight: normal;
+        font-size:5vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(47, 47, 241);
+    }
+    .greetings{
+        font-family:Arial, Helvetica, sans-serif;
+        color: aqua;
+        font-size: 2vh;
+    }
+}
+@media(max-width:400px){
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          width: 70%;
+          height: 90%;
+          background-color: WHITE;
+      
+          
+      }
+    form{
+        overflow: hidden;
+        display: grid;
+        width:70%;
+        height: 70vh;
+        grid-template-areas: 
+        'head '
+        'fname '
+        'lname'
+        'email '
+        'phn'
+        'address'
+        'more'
+        'submit'
+        ;
+       
+        
+    }
+    ::placeholder{
+        color: #598aca;
+        font-weight: bold;
+        font-size: 50%;
+    }
+    #address::placeholder{
+        padding-top: 2%;
+        font-size: 70%;
+        font-weight: bold;
+        color:#406ca7
+    }
+    #more::placeholder{
+        font-size: 70%;
+        font-weight: bold;
+        color:#3a69a1
+    }
+    #address{
+        resize: none;
+        grid-area: address;
+        height: 6vh;
+        border-radius: 7px;
+        width:90%;
+        
+        background-color: #b4c0f3;
+        color: #0f5dc4;
+        font-size: medium;
+    }
+    #more{
+        resize: none;
+        grid-area: more;
+        height:6vh;
+        border-radius: 7px;
+        width:90%;
+        background-color: #9ba1f3;
+        color: #2463b4;
+        
+    }
+    #submit{
+        grid-area: submit;
+        margin: 0px auto;
+        font-size: 80%;
+        width: 50%;
+        background-color: #1a73e8;
+        color: white;
+        border-radius: 20px;
+    }
+    .name{
+        width:90%;
+        height:6vh;
+        border-radius: 7px;
+        background-color: #e7eef8;
+    }
+    .details{
+        width:90%;
+        height:6vh;
+        border-radius: 7px;
+        background-color: #cad8ec;
+    }
+    
+    .heading{
+        margin:2px;
+        grid-area: head;
+        font-weight: normal;
+        font-size:4vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(47, 47, 241);
+    }
+    .greetings{
+        font-family:Arial, Helvetica, sans-serif;
+        color: aqua;
+        font-size: 2vh;
+    }
+}
